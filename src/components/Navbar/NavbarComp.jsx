@@ -25,7 +25,7 @@ console.log(noteLength);
           <Navbar.Brand>
             <Link to="">
               <div className="d-flex justify-content-between align-items-center">
-                <i className="fa-solid fa-note-sticky text-white fa-xl me-3"></i>
+                <i className="fa-solid fa-note-sticky text-white fa-xl me-3" ></i>
                 <h1 className="h3 text-white">Sticky App</h1>
               </div>
             </Link>
@@ -50,20 +50,19 @@ console.log(noteLength);
                 <>
                   <Nav.Link>
                     <span
-                      className={`text-white h6 position-absolute  ${style.num_pos}`}
+                      className={`text-white h6 position-absolute  d-sm-none d-lg-block ${style.num_pos}`}
                     >
                     
                       {noteLength}
                     </span>
-                    <i class="fa-solid fa-box-open text-white position-relative"></i>
+                    <i class="fa-solid fa-box-open text-white position-relative  d-sm-none d-lg-block"></i>
                   </Nav.Link>
                   <Nav.Link onClick={logout}>
                     <span className="text-white h6"> Logout</span>
                   </Nav.Link>
                 </>
               )}
-
-              <div className="ms-5 d-flex">
+              <div className="ms-5 d-lg-flex d-sm-none">
                 <Nav.Link>
                   <i class="fa-brands fa-facebook-f text-white"></i>
                 </Nav.Link>
