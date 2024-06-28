@@ -5,7 +5,6 @@ import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import { useFormik } from "formik";
 import axios from "axios";
-import { Fade, Slide } from "react-awesome-reveal";
 
 export default function Note({ note, deleteFn, noteId, getNotes }) {
   const [show, setShow] = useState(false);
@@ -85,7 +84,7 @@ export default function Note({ note, deleteFn, noteId, getNotes }) {
       </Modal>
 
       <div className="col-md-4">
-        <Slide direction="top">
+       
           <Card>
             <Card.Body>
               <Card.Title>{note.title}</Card.Title>
@@ -103,7 +102,7 @@ export default function Note({ note, deleteFn, noteId, getNotes }) {
               ></i>
             </Card.Body>
           </Card>
-        </Slide>
+       
       </div>
     </>
   );
